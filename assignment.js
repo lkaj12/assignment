@@ -22,7 +22,7 @@ function budgetCalculator(watch,mobile,laptop){
     var watch =watch*50;  //quantity * fixed price
     var mobile =mobile*100;
     var laptop = laptop*500;
-    var result=watch+mobile+laptop;
+    var result=watch+mobile+laptop; //sum of all expenses & storing in a variable
     return result;
   }
   console.log(budgetCalculator(2,3,4));
@@ -69,11 +69,12 @@ function budgetCalculator(watch,mobile,laptop){
 
 //4
 //finds the largest word
+//compared the lengths of the string & then assign the string into max
      var friendList = ["abbas", "hasanul karim", "zim sarkar", "sajedul karim jony ", "mukti", "shovan", "zaman", "kamal", "akhi"];
 
      function megaFriend(arr) {
-       var max = arr[0];
-       for (i = 0; i < arr.length; i++) {  //length property of an objet
+       var max = arr[0]; 
+       for (i = 0; i < arr.length; i++) {  //length property & for loop
          if (arr[i].length > max.length) {
            max = arr[i];
          }
